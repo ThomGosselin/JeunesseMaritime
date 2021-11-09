@@ -42,6 +42,15 @@ header{
     padding-right: 50px;
 }
 
+.icon-menu {
+    height: auto;
+    width: 2.8%;
+}
+
+.compte-box {
+    display: flex;
+}
+
 
 .sectionContact{
     display: flex;
@@ -168,7 +177,6 @@ header{
     display: block;
     width: 100%;
     height: 2px;
-    background: green;
     transition: 0.5s;
     border-radius: 2px;
     pointer-events: none;
@@ -204,4 +212,14 @@ header{
 .contactContainer{
     display: flex;
     justify-content: space-evenly;
+}
+
+.line{
+ background: greenyellow;
+}
+
+/* formulaire 2*/
+range{
+    display: flex;
+
 }
