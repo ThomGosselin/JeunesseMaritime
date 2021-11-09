@@ -2,4 +2,206 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    
+}
+
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(rgba(0,21,56,1) 0%, rgba(0,18,47,1) 35%, rgba(0,11,31,1) 100%);
+}
+
+header{
+    margin-bottom:150px;
+}
+
+.main-menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #141414;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    list-style: none;
+    margin: 20px;
+}
+
+.btn-menu {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.logo-menu {
+    height: auto;
+    width: 15%;
+    padding-right: 50px;
+}
+
+
+.sectionContact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding:20px;
+    width: 100%;
+    background: #000426;
+
+}
+
+.sectionContact::before{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    transform: translate(-420px,-180px);
+}
+
+.sectionContact::after{
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    transform: translate(400px,180px);
+
+}
+
+.formContainer{
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1000px;
+    padding:50px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(25px);
+}
+.formContainer::before
+{
+    content:'';
+    position: absolute;
+    top:0;
+    left:-40%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.formContainer h2{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.formContainer .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.formContainer .row100 .col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 20px;
+}
+
+.formContainer .row100 .col .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+}
+
+.formContainer .row100 .col .inputBox input,
+.formContainer .row100 .col .inputBox textarea{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background: transparent;
+ box-shadow: none;
+ border: none;
+ outline: none;
+ font-size: 15px;
+ padding: 0 10px;
+ z-index: 1;   
+}
+
+.formContainer .row100 .col .inputBox .text{
+ position: absolute;
+ top:0;
+ left:0;
+ line-height: 40px;
+ font-size: 18px;
+ padding: 0 10px;
+ display: block;
+ transition: 0.5s;
+ pointer-events: none;   
+}
+.formContainer .row100 .col .inputBox input:focus + .text ,
+.formContainer .row100 .col .inputBox input:valid + .text,
+.formContaineriner .row100 .col .inputBox textarea:focus + .text,
+.formContainer .row100 .col .inputBox textarea:valid + .text
+{
+    top:-35px;
+    left:-10px;
+}
+
+.formContainer .row100 .col .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: green;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+.formContainer .row100 .col .inputBox input:focus ~ .line ,
+.formContainer .row100 .col .inputBox input:valid ~ .line{
+    height: 100%;
+}
+
+.formContainer .row100 .col .inputBox.textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding:10px 0;
+}
+
+.formContainer .row100 .col .inputBox textarea:focus ~ .line ,
+.formContainer .row100 .col .inputBox textarea:valid ~ .line{
+    height: 100%;
+}
+
+.formContainer .row100 .col input[type="submit"]{
+    border:none;
+    padding:10px 40px;
+    cursor:pointer;
+    outline: none;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 2px;
+}
+.contactContainer{
+    display: flex;
+    justify-content: space-evenly;
 }
