@@ -9,8 +9,10 @@
 <body>
     <header>
         <nav class="main-menu">
-            <ul class="menu">
+            <div class="logo-box">
                 <img src="img/logo.png" alt="Logo Jeunesse Maritime" class="logo-menu">
+            </div>
+            <ul class="menu">
                 <li><a href="#Ressource" class="btn-menu">Ressources</a></li>
                 <li><a href="#Mission" class="btn-menu">Mission</a></li>
                 <li><a href="#Projets" class="btn-menu">Projets</a></li>
@@ -19,13 +21,13 @@
                 <li><a href="#Equipage" class="btn-menu">Équipage</a></li>
                 <li><a href="#Contact" class="btn-menu">Contact</a></li>
                 <li><a href="#Soutenir" class="btn-menu">Soutenir</a></li>
-                <img src="img/Jumelles.png" alt="Icon de Recherche" class="icon-menu">
-                <div class="compte-box">
-                    <img src="img/iconeMembre.png" alt="Icon de compte">
-                    <p>Votre Compte</p>
-                    <img src="img/Ancre.png" alt="Ancre">
-                </div>
+                <img src="img/Jumelles.png" alt="Icon de Recherche" class="icon-menu">    
             </ul>
+            <div class="compte-box">
+                <img src="img/iconeMembre.png" alt="Icon de compte">
+                <p>Votre Compte</p>
+                <img src="img/Ancre.png" alt="Ancre">
+            </div>
         </nav>
     </header>
     <main>
@@ -83,75 +85,52 @@
         <div>8</div>
     </section>
     <section class="contact">
-        <!-- ancien form
-        <div class= "contactContainer">
-            <div class="formContainer">
-                <h2>Nous contacter</h2>
-                <form action="#" method="post"></form>
-            <div class="row100">
-                <div class="col">
-                    <div class="inputBox">
-                        <input type="text" name="prenom" required="required" >
-                        <span class="text">Prénom</span>
-                        <span class="line"></span>
-                    </div>
-                </div>
-                <div class="col">
-                    <h6>Test</h6>
-                    <span class="barre"></span>
-                    <input type="text" name="test" required="required" >
-                </div>
-                <div class="col">
-                    <div class="inputBox">
-                        <input type="text" name="nom" required="required" >
-                        <span class="text">Nom</span>
-                        <span class="line"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="row100">
-                <div class="col">
-                    <div class="inputBox">
-                        <input type="text" name="mail" required="required" >
-                        <span class="text">Adresse courriel</span>
-                        <span class="line"></span>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="inputBox">
-                        <input type="text" name="phone" required="required" >
-                        <span class="text">Telephone</span>
-                        <span class="line"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="row100">
-                <div class="col">
-                    <div class="inputBox textarea">
-                        <textarea required="required"></textarea>
-                        <span class="text" name="message">Veuillez taper votre message ici..</span>
-                        <span class="line"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="row100">
-                <div class="col">
-                    <input type="submit" value="envoyer" class="buttonSend">
-                </div>
-            </div>
-        </div>
-</form>
--->
+<h2>Pour nous contacter</h2>
+<div class="contactSpace">
+    <div class="form">
                 <form action="#" method="post">
                     <div class="formcontainer">
-                        <h2>Pour nous contacter</h2>
                         <div class="range">
+                            <div class="prenom">
                             <h4>Prenom</h4>
-                            <br class="barrePrenom">
-                            <input type="text" name="prenom" required="required">
+                            <div class="barrePrenom"></div>
+                            <br>
+                            <input type="text" name="prenom" required="required" id="formPrenom" value="Wathan">
+                            <div id="nom">
+                                <h4>Nom</h4>
+                                <div class="barrenom"></div>
+                                <br>
+                                <input type="text" name="nom" required="required" id="formNom" value="Noods">
+                            </div>
+                            <div class="range">    
+                            <div id="courriel">
+                                <h4>Courriel</h4>
+                                <div class="barreCourriel"></div>
+                                <br>
+                                <input type="mail" name="email" required="required" id="formMail">
+                            </div>
                         </div>
+                        <div class="range">
+                            <div id="subject">
+                                <h4>Sujet</h4>
+                                <div class="barreSujet"></div>
+                                <br>
+                                <input type="text" name="sujet" required="required" id="formSujet">
+                            </div>    
+                        </div>
+                        <div class="range">
+                            <div id="message">
+                                <h4>Votre message</h4>
+                                <div class="barreMessage"></div>
+                                <br>
+                                <textarea required="required"></textarea>
+                            </div>    
+                        </div>        
+                    </div>
                 </form>
-                
+                </div>
+            </div>
+    </div>        
         <div class="contactInfo">
             <img src="img/logo.png" alt="logo de jeunesse maritime">
             <h4>Adresse:</h4>

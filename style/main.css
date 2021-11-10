@@ -1,3 +1,5 @@
+/*@import*/
+
 *{
     margin: 0;
     padding: 0;
@@ -9,9 +11,10 @@ body{
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: linear-gradient(rgba(0,21,56,1) 0%, rgba(0,18,47,1) 35%, rgba(0,11,31,1) 100%);
+    color: #fff;
 }
 
-header{
+header {
     margin-bottom:150px;
 }
 
@@ -20,38 +23,55 @@ header{
     position: fixed;
     top: 0;
     background-color: #141414;
-}
-
-.menu {
     display: flex;
-    align-items: center;
-    justify-content: center ;
-    list-style: none;
-    margin: 20px;
+    justify-content: space-between;
+    padding: 30px 0px 30px 0px;
 }
 
-.btn-menu {
-    text-decoration: none;
-    color: white;
-    padding: 20px;
+.logo-box {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-menu {
     height: auto;
-    width: 15%;
-    padding-right: 50px;
+    width: 60%;
+}
+
+.menu {
+    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.btn-menu {
+    flex-basis: 11%;
+    text-decoration: none;
+    color: white;
 }
 
 .icon-menu {
     height: auto;
-    width: 2.8%;
+    width: 5%;
 }
 
-.compte-box {
+.compte-box {
+    flex-basis: 25%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.compte-box p {
+    color: #fff;
+    padding: 0px 20px 0px 20px;
+}
 
+/*---------------------------------------*/
 .sectionContact{
     display: flex;
     justify-content: center;
@@ -219,7 +239,47 @@ header{
 }
 
 /* formulaire 2*/
-range{
-    display: flex;
+.contactSpace{
+display: flex;
+justify-content: space-evenly;
+}
 
+.range{
+    display: flex;
+    flex-direction: column;
+}
+.barrePrenom{
+    border-top: 2px solid green;
+    width:99px;
+    position: absolute;
+    left: 481px;
+}
+
+
+.barrenom{
+    border-top: 2px solid green;
+    width:126px;
+    position: absolute;
+    left: 454px;  
+}
+.barreCourriel{
+    border-top: 2px solid green;
+    width: 100px;
+    position: absolute;
+    left:481px;
+}
+.barreSujet{
+    border-top: 2px solid green;
+    width: 120px;
+    position: absolute;
+    left:52px;
+    right: 255px; 
+}
+
+.barreMessage{
+    border-top: 2px solid green;
+    width: 120px;
+    position: absolute;
+    left:52px;
+    right: 255px; 
 }
