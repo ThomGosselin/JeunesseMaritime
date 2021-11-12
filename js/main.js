@@ -47,25 +47,27 @@ menuBtn.forEach((btn, id) => {
         isBtnActive = true;
         oldID = id;
 
-        btn.addEventListener("mouseout", () => {
-            isBtnOut = true;
-            removeDropDownMenu(id);
-        })
-
         dropItem[id].addEventListener("mouseout", () => {
             isDropOut = true;
             removeDropDownMenu(id);
         })
+
+    })
+});
+
+menuBtn.forEach((btn, id) => {
+    btn.addEventListener("mouseout", () => {
+        isBtnOut = true;
+        removeDropDownMenu(id);
     })
 });
 
 function removeDropDownMenu(id) { 
-    console.log(isDropOut, isBtnOut);
     if(isDropOut && isBtnOut){
+        console.log("enter");
         dropItem[id].classList.remove("show");
         isBtnActive = false;
+        isBtnOut = false;
+        isDropOut = false;
     };
-
-    isBtnOut = false;
-    isDropOut = false;
 }
