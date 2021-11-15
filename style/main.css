@@ -1,4 +1,18 @@
-/*@import*/
+@font-face {
+  font-family: CeraBold;
+  src: url(../fonts/Cera\ Pro\ Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: CeraLight;
+  src: url(../fonts/Cera\ Pro\ Light.otf);
+}
+
+@font-face {
+  font-family: CeraMedium;
+  src: url(../fonts/Cera\ Pro\ Medium.otf);
+}
 
 * {
   margin: 0;
@@ -7,7 +21,7 @@
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: CeraMedium;
   background: linear-gradient(
     rgba(0, 21, 56, 1) 0%,
     rgba(0, 18, 47, 1) 35%,
@@ -29,10 +43,7 @@ header {
   justify-content: space-between;
   padding: 30px 0px 30px 0px;
   z-index: 100;
-}
-
-.main-menu:hover {
-  border-bottom: 3px solid green;
+  text-transform: uppercase;
 }
 
 .logo-box {
@@ -45,6 +56,10 @@ header {
 .logo-menu {
   height: auto;
   width: 60%;
+}
+
+.btn-menu {
+  text-transform: uppercase;
 }
 
 .menu {
@@ -84,8 +99,11 @@ header {
   background: none;
   cursor: pointer;
   color: #fff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: CeraMedium;
   font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 12px 0px;
 }
 
 .dropbtn:hover,
