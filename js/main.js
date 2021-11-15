@@ -1,73 +1,37 @@
 const menuBtn = document.querySelectorAll(".dropbtn");
 const dropItem = document.querySelectorAll(".drop-box");
 
-let isBtnActive = false;
-let oldID = null;
-
-let isBtnOut = false;
-let isDropOut = false;
+let isMouseOnDropMenu = false;
+let isDropMenuOpen = false;
 
 menuBtn.forEach((btn, id) => {
-    btn.addEventListener("click", () => {
+  btn.addEventListener("mouseenter", () => {
+    if (!isDropMenuOpen) {
+      dropItem[id].classList.add("show");
+      isDropMenuOpen = true;
+    }
 
-        if(id != oldID && oldID != null) {
-            dropItem[oldID].classList.remove("show");
-            isBtnActive = false;
-        }
+    dropItem[id].addEventListener("mouseenter", () => {
+      isMouseOnDropMenu = true;
+    });
 
-        dropItem[id].classList.add("show");
-
-        if(isBtnActive) {
+    dropItem[id].addEventListener("mouseleave", () => {
+      if (isMouseOnDropMenu) {
         dropItem[id].classList.remove("show");
-        isBtnActive = false;
-        return;
-        };
+        isDropMenuOpen = false;
+      }
+    });
+  });
 
-        isBtnActive = true;
-        oldID = id;
-    })
+  btn.addEventListener("mouseleave", (evt) => {
+    let btnPos = dropItem[id].getBoundingClientRect();
+    let btnCenterX = (btnPos.left + btnPos.right) / 2;
+    let btnCenterY = (btnPos.top + btnPos.bottom) / 2;
+    console.log(btnCenterX, btnCenterY);
+    console.log(evt);
+    /*if (!isDropMenuOpen) {
+      dropItem[id].classList.remove("show");
+      isDropMenuOpen = false;
+    }*/
+  });
 });
-
-menuBtn.forEach((btn, id) => {
-    btn.addEventListener("mouseover", () => {
-
-        if(id != oldID && oldID != null) {
-            dropItem[oldID].classList.remove("show");
-            isBtnActive = false;
-        }
-
-        dropItem[id].classList.add("show");
-
-        if(isBtnActive) {
-        dropItem[id].classList.remove("show");
-        isBtnActive = false;
-        return;
-        };
-
-        isBtnActive = true;
-        oldID = id;
-
-        dropItem[id].addEventListener("mouseout", () => {
-            isDropOut = true;
-            removeDropDownMenu(id);
-        })
-
-    })
-});
-
-menuBtn.forEach((btn, id) => {
-    btn.addEventListener("mouseout", () => {
-        isBtnOut = true;
-        removeDropDownMenu(id);
-    })
-});
-
-function removeDropDownMenu(id) { 
-    if(isDropOut && isBtnOut){
-        console.log("enter");
-        dropItem[id].classList.remove("show");
-        isBtnActive = false;
-        isBtnOut = false;
-        isDropOut = false;
-    };
-}
