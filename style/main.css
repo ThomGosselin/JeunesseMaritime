@@ -49,6 +49,7 @@ body {
 .logo-menu {
   height: auto;
   width: 60%;
+  cursor: pointer;
 }
 
 .imgResponsive {
@@ -234,7 +235,7 @@ body {
 .ressourceContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-basis: 30%;
   border: 2px solid #21C4FD;
@@ -244,14 +245,20 @@ body {
   flex-basis: 60%;
   display: flex;
   justify-content: space-between;
-  align-items: left;
+  align-items: flex-start;
   flex-direction: column;
   padding: 25px;
+}
+
+.ressource-img{
+  flex-basis: 30%;
+  
 }
 
 .img-fluid{
   width: auto;
   height: 50%;
+  overflow: hidden;
 }
 
 /*----------------Mission et historique---------------------*/
@@ -301,14 +308,29 @@ body {
   height: 100vh;
 }
 
-/*----------------Projet et nouveauté---------------------*/
-.projetNouveauté {
+.supportBtn a{
+  text-decoration: none;
+  color: white;
+}
+
+.supportBtn {
+  background: #009999;
+  width: 15vw;
+  height: 5vh;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/*----------------Projet et nouveauté---------------------*/
+.projetNouveauté {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   flex-direction: column;
-  position: relative;
-  height: 500px;
+  height: 100vh
 }
 
 .project {

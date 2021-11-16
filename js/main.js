@@ -3,6 +3,11 @@ const dropItems = document.querySelectorAll(".drop-box");
 const menu = document.querySelector(".menu");
 
 
+const logoMenu = document.querySelector(".logo-menu");
+
+////////////////////////////////
+// Code pour le menu
+
 let showIndex = 0;
 
 menuBtn.forEach((btn, id) => {
@@ -36,4 +41,14 @@ function updateDropDownMenu(dropItem) {
       dropItem.classList.add("show");
     }
   }, 1);
+}
+
+////////////////////////////////
+// Code pour rendre le logo du site cliquable
+
+logoMenu.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
