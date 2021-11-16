@@ -31,7 +31,7 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: #141414;
+  background-color: #001538;
   display: flex;
   justify-content: space-between;
   padding: 30px 0px 30px 0px;
@@ -233,8 +233,12 @@ body {
 }
 
 .ressourceContainer {
-  flex-basis: 32%;
+  flex-basis: 30%;
   border: 2px solid #21C4FD;
+  background-color: #002250;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .ressource-info{
@@ -246,17 +250,41 @@ body {
   padding: 25px;
 }
 
+.ressource-img{
+  height: 40%;
+}
+
 .img-fluid{
+  height: 100%;
   width: 100%;
-  height: auto;
+  object-fit: cover;
 }
 
-.info{
-  padding-bottom: 100px;
+.info h4{
+  font-family: CeraBold;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  text-decoration: underline #21C4FD;
 }
 
-.info p{
-  padding: 10px 0;
+.text{
+  padding: 20px 0px 10px 0px;
+  font-size: 1.2rem;
+}
+
+.date{
+  font-size: 0.8rem;
+}
+
+.tags{
+  display: flex;
+}
+
+.tags p{
+  padding: 5px 10px;
+  margin-right: 20px;
+  background-color: #003A9A;
+  font-family: CeraLight;
 }
 
 /*----------------Mission et historique---------------------*/
@@ -322,6 +350,7 @@ body {
 }
 
 
+
 /*----------------Projet et nouveauté---------------------*/
 .projetNouveauté {
   display: flex;
@@ -370,9 +399,10 @@ body {
 
 .blogue {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  height: 100vh;
 }
 
 .blogueArticleContainer {
@@ -388,7 +418,10 @@ body {
   overflow: hidden;
   backdrop-filter: blur(25px);
 }
-
+/*----------------Équipe ---------------------*/
+.équipage{
+  
+}
 /*----------------Contact ---------------------*/
 .contactSpace {
   display: flex;
