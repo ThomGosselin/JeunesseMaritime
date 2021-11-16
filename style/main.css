@@ -30,10 +30,6 @@ body {
   color: #fff;
 }
 
-header {
-  margin-bottom: 500px;
-}
-
 .main-menu {
   width: 100%;
   position: fixed;
@@ -144,6 +140,13 @@ header {
 
 .show {
   display: block;
+}
+/*----------------Section Header---------------------*/
+.header-box{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*----------------Section ressource---------------------*/
