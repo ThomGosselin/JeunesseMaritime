@@ -18,15 +18,12 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
   font-family: CeraMedium;
-  background: linear-gradient(
-    rgba(0, 21, 56, 1) 0%,
-    rgba(0, 18, 47, 1) 35%,
-    rgba(0, 11, 31, 1) 100%
-  );
+  background: blue;
   color: #fff;
 }
 
@@ -147,6 +144,47 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.search-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #21C4FD;
+  padding-bottom: 10px;
+  margin-top: 50px;
+}
+
+.search-bar{
+  flex-basis: 90%;
+}
+
+.icon-recherche{
+  height: auto;
+  width:15%;
+  padding-right: 10px;
+}
+
+.custom-shape-divider-bottom-1637071016 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1637071016 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 158px;
+}
+
+.custom-shape-divider-bottom-1637071016 .shape-fill {
+  fill: #001538;
 }
 
 /*----------------Section ressource---------------------*/
@@ -154,21 +192,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background: #001538;
 }
+
 .ressourceBox {
   display: flex;
   justify-content: space-evenly;
   width: 60%;
 }
+
 .ressourceContainer {
-  z-index: -1000;
   flex-basis: 20%;
   max-width: 650px;
   padding: 50px;
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-  border: 1px solid lightblue;
-  border-right: 1px solid lightblue;
-  border-bottom: 1px solid lightblue;
+  border: 1px solid #009999;
+  border-right: 1px solid #009999;
+  border-bottom: 1px solid #009999;
   border-radius: 10px;
   overflow: hidden;
   backdrop-filter: blur(25px);
@@ -177,22 +218,22 @@ body {
 .ressourceContainer h4 {
   text-align: center;
 }
-/* mission et historique */
+/*----------------Mission et historique---------------------*/
 .videoContainer {
   z-index: 2;
   flex-basis: 20%;
   max-width: 650px;
   padding: 50px;
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-  border: 1px solid lightblue;
-  border-right: 1px solid lightblue;
-  border-bottom: 1px solid lightblue;
+  border: 1px solid #009999;
+  border-right: 1px solid #009999;
+  border-bottom: 1px solid #009999;
   border-radius: 10px;
   overflow: hidden;
   backdrop-filter: blur(25px);
 }
 
-/* Projet et nouveauté */
+/*----------------Projet et nouveauté---------------------*/
 .projetNouveauté {
   display: flex;
   justify-content: center;
@@ -208,9 +249,9 @@ body {
   max-width: 1000px;
   padding: 50px;
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-  border: 1px solid lightblue;
-  border-right: 1px solid lightblue;
-  border-bottom: 1px solid lightblue;
+  border: 1px solid #009999;
+  border-right: 1px solid #009999;
+  border-bottom: 1px solid #009999;
   border-radius: 10px;
   overflow: hidden;
   backdrop-filter: blur(25px);
@@ -229,7 +270,7 @@ body {
   color: green;
 }
 
-/*blogue*/
+/*----------------Blogue---------------------*/
 
 .blogue {
   display: flex;
@@ -244,48 +285,48 @@ body {
   max-width: 1000px;
   padding: 50px;
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-  border: 1px solid lightblue;
-  border-right: 1px solid lightblue;
-  border-bottom: 1px solid lightblue;
+  border: 1px solid #009999;
+  border-right: 1px solid #009999;
+  border-bottom: 1px solid #009999;
   border-radius: 10px;
   overflow: hidden;
   backdrop-filter: blur(25px);
 }
 
-/* formulaire */
+/*----------------Contact ---------------------*/
 .contactSpace {
   display: flex;
   justify-content: space-evenly;
 }
 
 .barrePrenom {
-  border-top: 2px solid green;
+  border-top: 2px solid #00e600;
   width: 99px;
   position: absolute;
   left: 481px;
 }
 
 .barrenom {
-  border-top: 2px solid green;
+  border-top: 2px solid #00e600;
   width: 126px;
   position: absolute;
   left: 454px;
 }
 .barreCourriel {
-  border-top: 2px solid green;
+  border-top: 2px solid #00e600;
   width: 100px;
   position: absolute;
   left: 481px;
 }
 .barreSujet {
-  border-top: 2px solid green;
+  border-top: 2px solid #00e600;
   width: 120px;
   position: absolute;
   left: 460px;
 }
 
 .barreMessage {
-  border-top: 2px solid green;
+  border-top: 2px solid #00e600;
   width: 30px;
   position: absolute;
   left: 542px;
