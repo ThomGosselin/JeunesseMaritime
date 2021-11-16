@@ -58,6 +58,11 @@ header {
   width: 60%;
 }
 
+.imgResponsive {
+  width: 100%;
+  height: auto;
+}
+
 .btn-menu {
   text-transform: uppercase;
 }
