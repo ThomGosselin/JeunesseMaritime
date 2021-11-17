@@ -65,6 +65,25 @@ body {
   object-fit: cover;
 }
 
+.mini-title {
+  text-transform: uppercase;
+  padding: 0 0 10px 0;
+  font-size: 2.1rem;
+  font-family: CeraBold;
+}
+
+.margin-bottom {
+  margin-bottom: 100px;
+}
+
+.absolute-img {
+  position: absolute;
+  z-index: 0;
+  left: -10%;
+  width: auto;
+  height: 90%;
+}
+
 /* -------------------- Menu Principale -------------------- */
 
 .main-menu {
@@ -343,6 +362,7 @@ body {
 }
 
 /*----------------Mission et historique---------------------*/
+
 .missionHistorique {
   display: flex;
   justify-content: space-evenly;
@@ -435,6 +455,7 @@ body {
 }
 
 /*----------------Projet et nouveauté---------------------*/
+
 .projetNouveauté {
   display: flex;
   justify-content: space-evenly;
@@ -445,15 +466,15 @@ body {
   position: relative;
 }
 
+.projetNouveauté article {
+  z-index: 1;
+}
+
 .project-box {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
   width: 60%;
 }
 
 .project-container {
-  flex-basis: 45%;
   border: 2px solid #21c4fd;
   background-color: #002250;
   display: flex;
@@ -471,8 +492,11 @@ body {
 }
 
 .project-img {
-  height: 40px;
-  flex-basis: 40%;
+  height: 250px;
+}
+
+.projet-date {
+  padding: 25px 0;
 }
 
 /*----------------Nous soutenir---------------------*/
@@ -481,7 +505,6 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background: #001538;
   height: 100vh;
   position: relative;
 }
@@ -514,6 +537,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  background: #001538;
   height: 100%;
   position: relative;
 }
@@ -540,8 +564,8 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background: #001538;
   height: 100vh;
+  background: #001538;
   position: relative;
 }
 
@@ -574,6 +598,7 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  background: #001538;
   position: relative;
 }
 
