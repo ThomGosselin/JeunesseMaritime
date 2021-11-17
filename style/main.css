@@ -37,6 +37,7 @@ body {
   padding: 30px 0px 30px 0px;
   z-index: 100;
   text-transform: uppercase;
+  border-bottom: 2.5px solid #21c4fd;
 }
 
 .logo-box {
@@ -140,7 +141,7 @@ body {
   display: block;
 }
 /*----------------Section Header---------------------*/
-.header-box{
+.header-box {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -148,22 +149,41 @@ body {
   flex-direction: column;
 }
 
-.search-box{
+.search-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #21C4FD;
+  border-bottom: 2px solid #21c4fd;
   padding-bottom: 10px;
-  margin-top: 50px;
+  margin-top: 100px;
+  width: 40%;
 }
 
-.search-bar{
+.search-bar {
   flex-basis: 90%;
+  background: none;
+  border: none;
+  color: #ffffff;
+  padding: 10px;
+  font-family: CeraLight;
+  font-size: 1.5rem;
 }
 
-.icon-recherche{
+.search-bar::placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-family: CeraLight;
+}
+
+.search-bar:focus {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.icon-recherche {
   height: auto;
-  width:15%;
+  width: 10%;
   padding-right: 10px;
 }
 /*----------------Vague Header---------------------*/
@@ -206,7 +226,7 @@ body {
 }
 
 .custom-shape-divider-bottom-1637072263 .shape-fill {
-  fill: #003A9A;
+  fill: #003a9a;
 }
 
 /*----------------Section ressource---------------------*/
@@ -216,14 +236,15 @@ body {
   align-items: center;
   flex-direction: column;
   background: #001538;
-  height: 100vh;
+  height: 100%;
 }
 
-.section-title{
+.section-title {
   display: flex;
   justify-content: left;
   align-items: flex-start;
   width: 60%;
+  margin: 100px 0px;
 }
 
 .ressourceBox {
@@ -234,14 +255,14 @@ body {
 
 .ressourceContainer {
   flex-basis: 30%;
-  border: 2px solid #21C4FD;
+  border: 2px solid #21c4fd;
   background-color: #002250;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 
-.ressource-info{
+.ressource-info {
   flex-basis: 60%;
   display: flex;
   justify-content: space-between;
@@ -250,49 +271,102 @@ body {
   padding: 25px;
 }
 
-.ressource-img{
+.ressource-img {
   height: 40%;
 }
 
-.img-fluid{
+.img-fluid {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.info h4{
+.info h4 {
   font-family: CeraBold;
   text-transform: uppercase;
   font-size: 1.3rem;
-  text-decoration: underline #21C4FD;
+  text-decoration: underline #21c4fd;
 }
 
-.text{
+.text {
   padding: 20px 0px 10px 0px;
   font-size: 1.2rem;
 }
 
-.date{
+.date {
   font-size: 0.8rem;
 }
 
-.tags{
+.tags {
   display: flex;
 }
 
-.tags p{
+.tags p {
   padding: 5px 10px;
   margin-right: 20px;
-  background-color: #003A9A;
+  background-color: #003a9a;
   font-family: CeraLight;
 }
 
+.section-title h2 {
+  font-size: 2.5rem;
+  font-family: CeraBold;
+  border-bottom: #003a9a solid 3px;
+  text-transform: uppercase;
+}
+
+.title-color {
+  color: #21c4fd;
+}
+
+.custom-shape-divider-top-1637115725 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1637115725 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 158px;
+}
+
+.custom-shape-divider-top-1637115725 .shape-fill {
+  fill: #001538;
+}
+
+.custom-shape-divider-top-1637115932 {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1637115932 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 158px;
+}
+
+.custom-shape-divider-top-1637115932 .shape-fill {
+  fill: #003a9a;
+}
 /*----------------Mission et historique---------------------*/
-.missionHistorique{
+.missionHistorique {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  position: relative;
   height: 100vh;
 }
 
@@ -307,10 +381,9 @@ body {
   border-bottom: 1px solid #009999;
   border-radius: 10px;
   overflow: hidden;
-  
 }
 
-.histoireBtn a{
+.histoireBtn a {
   text-decoration: none;
   color: white;
 }
@@ -325,7 +398,7 @@ body {
   align-items: center;
 }
 /*----------------Nous soutenir---------------------*/
-.nousSoutenir{
+.nousSoutenir {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -334,7 +407,7 @@ body {
   height: 100vh;
 }
 
-.supportBtn a{
+.supportBtn a {
   text-decoration: none;
   color: white;
 }
@@ -349,15 +422,13 @@ body {
   align-items: center;
 }
 
-
-
 /*----------------Projet et nouveauté---------------------*/
 .projetNouveauté {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  height: 100vh
+  height: 100vh;
 }
 
 .project {
@@ -382,12 +453,18 @@ body {
   margin-top: 15px;
 }
 
+.projectBtn {
+  margin: 100px 0px;
+}
+
 .projectBtn a {
   text-decoration: none;
-  color: green;
+  color: #ffffff;
+  font-family: CeraLight;
+  font-size: 2rem;
 }
 /*----------------Media Sociaux---------------------*/
-.mediaSociaux{
+.mediaSociaux {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -419,9 +496,9 @@ body {
   backdrop-filter: blur(25px);
 }
 /*----------------Équipe ---------------------*/
-.équipage{
+/*.équipage{
   
-}
+}*/
 /*----------------Contact ---------------------*/
 .contactSpace {
   display: flex;
