@@ -27,6 +27,46 @@ body {
   color: #fff;
 }
 
+/* -------------------- Classe générale -------------------- */
+
+.moreBtn {
+  margin: 100px 0px;
+}
+
+.moreBtn a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: CeraLight;
+  font-size: 2rem;
+}
+
+.section-title {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  width: 60%;
+  margin: 100px 0px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-family: CeraBold;
+  border-bottom: #003a9a solid 3px;
+  text-transform: uppercase;
+}
+
+.title-color {
+  color: #21c4fd;
+}
+
+.img-fluid {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* -------------------- Menu Principale -------------------- */
+
 .main-menu {
   width: 100%;
   position: fixed;
@@ -140,7 +180,9 @@ body {
 .show {
   display: block;
 }
-/*----------------Section Header---------------------*/
+
+/* -------------------- Section Header -------------------- */
+
 .header-box {
   height: 100vh;
   display: flex;
@@ -186,7 +228,9 @@ body {
   width: 10%;
   padding-right: 10px;
 }
-/*----------------Vague Header---------------------*/
+
+/* ----- Vague Header ----- */
+
 .custom-shape-divider-bottom-1637071016 {
   position: absolute;
   bottom: 0;
@@ -207,7 +251,9 @@ body {
 .custom-shape-divider-bottom-1637071016 .shape-fill {
   fill: #001538;
 }
-/*---------Vague 2----------*/
+
+/* ----- Vague 2 Header ----- */
+
 .custom-shape-divider-bottom-1637072263 {
   position: absolute;
   bottom: -50px;
@@ -229,7 +275,8 @@ body {
   fill: #003a9a;
 }
 
-/*----------------Section ressource---------------------*/
+/* -------------------- Section Ressources -------------------- */
+
 .ressourceEducative {
   display: flex;
   justify-content: space-evenly;
@@ -237,14 +284,7 @@ body {
   flex-direction: column;
   background: #001538;
   height: 100%;
-}
-
-.section-title {
-  display: flex;
-  justify-content: left;
-  align-items: flex-start;
-  width: 60%;
-  margin: 100px 0px;
+  position: relative;
 }
 
 .ressourceBox {
@@ -275,12 +315,6 @@ body {
   height: 40%;
 }
 
-.img-fluid {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
 .info h4 {
   font-family: CeraBold;
   text-transform: uppercase;
@@ -308,58 +342,6 @@ body {
   font-family: CeraLight;
 }
 
-.section-title h2 {
-  font-size: 2.5rem;
-  font-family: CeraBold;
-  border-bottom: #003a9a solid 3px;
-  text-transform: uppercase;
-}
-
-.title-color {
-  color: #21c4fd;
-}
-
-.custom-shape-divider-top-1637115725 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1637115725 svg {
-  position: relative;
-  display: block;
-  width: calc(150% + 1.3px);
-  height: 158px;
-}
-
-.custom-shape-divider-top-1637115725 .shape-fill {
-  fill: #001538;
-}
-
-.custom-shape-divider-top-1637115932 {
-  position: absolute;
-  top: -50px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-  z-index: -1;
-}
-
-.custom-shape-divider-top-1637115932 svg {
-  position: relative;
-  display: block;
-  width: calc(150% + 1.3px);
-  height: 158px;
-}
-
-.custom-shape-divider-top-1637115932 .shape-fill {
-  fill: #003a9a;
-}
 /*----------------Mission et historique---------------------*/
 .missionHistorique {
   display: flex;
@@ -368,6 +350,7 @@ body {
   flex-direction: column;
   position: relative;
   height: 100vh;
+  position: relative;
 }
 
 .videoContainer {
@@ -397,6 +380,101 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.histoireBtn:hover {
+  background: white;
+}
+.histoireBtn:hover a {
+  color: black;
+}
+
+/* ----- Vague Haut Mission ----- */
+
+.custom-shape-divider-top-1637115725 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1637115725 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 158px;
+}
+
+.custom-shape-divider-top-1637115725 .shape-fill {
+  fill: #001538;
+}
+
+/* ----- Vague Haut Mission 2 ----- */
+
+.custom-shape-divider-top-1637115932 {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1637115932 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 158px;
+}
+
+.custom-shape-divider-top-1637115932 .shape-fill {
+  fill: #003a9a;
+}
+
+/*----------------Projet et nouveauté---------------------*/
+.projetNouveauté {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background: #001538;
+  height: 100%;
+  position: relative;
+}
+
+.project-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 60%;
+}
+
+.project-container {
+  flex-basis: 45%;
+  border: 2px solid #21c4fd;
+  background-color: #002250;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.project-info {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.project-img {
+  height: 40px;
+  flex-basis: 40%;
+}
+
 /*----------------Nous soutenir---------------------*/
 .nousSoutenir {
   display: flex;
@@ -405,6 +483,7 @@ body {
   flex-direction: column;
   background: #001538;
   height: 100vh;
+  position: relative;
 }
 
 .supportBtn a {
@@ -422,55 +501,37 @@ body {
   align-items: center;
 }
 
-/*----------------Projet et nouveauté---------------------*/
-.projetNouveauté {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
+.supportBtn:hover {
+  background: white;
+}
+.supportBtn:hover a {
+  color: black;
 }
 
-.project {
-  z-index: 3;
-  width: 100%;
-  max-width: 1000px;
-  padding: 50px;
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-  border: 1px solid #009999;
-  border-right: 1px solid #009999;
-  border-bottom: 1px solid #009999;
-  border-radius: 10px;
-  overflow: hidden;
-  backdrop-filter: blur(25px);
-}
-
-.project1 {
-  margin-bottom: 15px;
-}
-
-.project2 {
-  margin-top: 15px;
-}
-
-.projectBtn {
-  margin: 100px 0px;
-}
-
-.projectBtn a {
-  text-decoration: none;
-  color: #ffffff;
-  font-family: CeraLight;
-  font-size: 2rem;
-}
 /*----------------Media Sociaux---------------------*/
 .mediaSociaux {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background: #001538;
-  height: 100vh;
+  height: 100%;
+  position: relative;
+}
+
+.instagramPictureContainer {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 40px;
+}
+
+.instaPic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0px 2px rgb(0 0 0 / 7%), 0 5px 6px rgb(0 0 0 / 16%);
+  height: 200px;
+  border: 3px solid #009999;
 }
 /*----------------Blogue---------------------*/
 
@@ -479,7 +540,9 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  background: #001538;
   height: 100vh;
+  position: relative;
 }
 
 .blogueArticleContainer {
@@ -493,16 +556,25 @@ body {
   border-bottom: 1px solid #009999;
   border-radius: 10px;
   overflow: hidden;
-  backdrop-filter: blur(25px);
 }
 /*----------------Équipe ---------------------*/
 /*.équipage{
-  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background: #001538;
+  height: 100vh;
+  position: relative;
 }*/
 /*----------------Contact ---------------------*/
 .contactSpace {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
 }
 
 .barrePrenom {
