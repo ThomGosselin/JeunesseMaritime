@@ -530,6 +530,23 @@ body {
 .supportBtn:hover a {
   color: black;
 }
+/*----------------Partenaire---------------------*/
+.partaireContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+.partenaire {
+  display: flex;
+}
+
+.logo-partenaire {
+  width: 80%;
+  height: auto;
+}
 
 /*----------------Media Sociaux---------------------*/
 .mediaSociaux {
@@ -542,21 +559,42 @@ body {
   position: relative;
 }
 
-.instagramPictureContainer {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 40px;
+.media-box {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-bottom: 200px;
 }
 
-.instaPic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0px 2px rgb(0 0 0 / 7%), 0 5px 6px rgb(0 0 0 / 16%);
-  height: 200px;
-  border: 3px solid #009999;
+.media {
+  flex-basis: 30%;
+  height: 600px;
+  border: 2px solid #21c4fd;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
+
+.img-facebook {
+  background-image: url(../img/pugholder.png);
+}
+
+.img-tiktok {
+  background-image: url(../img/pugholder_2.jpg);
+  transform: translate(0, 200px);
+}
+
+.img-instagram {
+  background-image: url(../img/pugholder_3.jpg);
+}
+
+.logo-relatif {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*----------------Blogue---------------------*/
 
 .blogue {
