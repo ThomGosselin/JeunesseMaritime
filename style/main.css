@@ -90,11 +90,12 @@ body {
   right: -10%;
   width: auto;
   height: 90%;
+  overflow: hidden;
 }
 
 /* ----- Fond Marin ----- */
 
-/*.fond-marin {
+.fond-marin {
   position: absolute;
   z-index: 2;
 }
@@ -112,7 +113,7 @@ body {
 .fond-soutenir-right {
   right: -50px;
   bottom: 0;
-}*/
+}
 
 /* -------------------- Vagues -------------------- */
 
@@ -663,9 +664,15 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background: #001538;
   height: 100%;
   position: relative;
+
+
+}
+
+.imgEquipage{
+  height: auto;
+  width:15%;
 }
 
 /* -------------------- Contact -------------------- */
@@ -676,7 +683,6 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background: #001538;
   position: relative;
 } /*
 
