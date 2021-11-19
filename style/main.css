@@ -76,12 +76,138 @@ body {
   margin-bottom: 100px;
 }
 
-.absolute-img {
+.absolute-img-left {
   position: absolute;
   z-index: 0;
   left: -10%;
   width: auto;
   height: 90%;
+}
+
+.absolute-img-right {
+  position: absolute;
+  z-index: 0;
+  right: -10%;
+  width: auto;
+  height: 90%;
+}
+
+/* ----- Fond Marin ----- */
+
+/*.fond-marin {
+  position: absolute;
+  z-index: 2;
+}
+
+.fond-mission-left {
+  left: 0;
+  bottom: -50px;
+}
+
+.fond-soutenir-left {
+  left: -50px;
+  bottom: 0;
+}
+
+.fond-soutenir-right {
+  right: -50px;
+  bottom: 0;
+}*/
+
+/* -------------------- Vagues -------------------- */
+
+/* ----- Vague Bas Foncée ----- */
+
+.custom-shape-divider-bottom-1637071016 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 3;
+}
+
+.custom-shape-divider-bottom-1637071016 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 158px;
+}
+
+.custom-shape-divider-bottom-1637071016 .shape-fill {
+  fill: #001538;
+}
+
+/* ----- Vague Bas Claire ----- */
+
+.custom-shape-divider-bottom-1637072263 {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 2;
+}
+
+.custom-shape-divider-bottom-1637072263 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 158px;
+}
+
+.custom-shape-divider-bottom-1637072263 .shape-fill {
+  fill: #003a9a;
+}
+
+/* ----- Vague Haut Foncée ----- */
+
+.custom-shape-divider-top-1637115725 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 3;
+}
+
+.custom-shape-divider-top-1637115725 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 158px;
+}
+
+.custom-shape-divider-top-1637115725 .shape-fill {
+  fill: #001538;
+}
+
+/* ----- Vague Haut Claire ----- */
+
+.custom-shape-divider-top-1637115932 {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+
+.custom-shape-divider-top-1637115932 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 158px;
+}
+
+.custom-shape-divider-top-1637115932 .shape-fill {
+  fill: #003a9a;
 }
 
 /* -------------------- Menu Principale -------------------- */
@@ -93,7 +219,7 @@ body {
   background-color: #001538;
   display: flex;
   justify-content: space-between;
-  padding: 30px 0px 30px 0px;
+  padding: 30px 0px;
   z-index: 100;
   text-transform: uppercase;
   border-bottom: 2.5px solid #21c4fd;
@@ -200,7 +326,7 @@ body {
   display: block;
 }
 
-/* -------------------- Section Header -------------------- */
+/* -------------------- Header -------------------- */
 
 .header-box {
   height: 100vh;
@@ -248,53 +374,7 @@ body {
   padding-right: 10px;
 }
 
-/* ----- Vague Header ----- */
-
-.custom-shape-divider-bottom-1637071016 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1637071016 svg {
-  position: relative;
-  display: block;
-  width: calc(150% + 1.3px);
-  height: 158px;
-}
-
-.custom-shape-divider-bottom-1637071016 .shape-fill {
-  fill: #001538;
-}
-
-/* ----- Vague 2 Header ----- */
-
-.custom-shape-divider-bottom-1637072263 {
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: -1;
-}
-
-.custom-shape-divider-bottom-1637072263 svg {
-  position: relative;
-  display: block;
-  width: calc(150% + 1.3px);
-  height: 158px;
-}
-
-.custom-shape-divider-bottom-1637072263 .shape-fill {
-  fill: #003a9a;
-}
-
-/* -------------------- Section Ressources -------------------- */
+/* -------------------- Ressources Éducatives -------------------- */
 
 .ressourceEducative {
   display: flex;
@@ -304,6 +384,7 @@ body {
   background: #001538;
   height: 100%;
   position: relative;
+  z-index: 4;
 }
 
 .ressourceBox {
@@ -361,7 +442,7 @@ body {
   font-family: CeraLight;
 }
 
-/*----------------Mission et historique---------------------*/
+/* -------------------- Mission et Historique -------------------- */
 
 .missionHistorique {
   display: flex;
@@ -371,6 +452,7 @@ body {
   position: relative;
   height: 100vh;
   position: relative;
+  background-image: url(../img/fond_mission.png);
 }
 
 .videoContainer {
@@ -408,53 +490,7 @@ body {
   color: black;
 }
 
-/* ----- Vague Haut Mission ----- */
-
-.custom-shape-divider-top-1637115725 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1637115725 svg {
-  position: relative;
-  display: block;
-  width: calc(150% + 1.3px);
-  height: 158px;
-}
-
-.custom-shape-divider-top-1637115725 .shape-fill {
-  fill: #001538;
-}
-
-/* ----- Vague Haut Mission 2 ----- */
-
-.custom-shape-divider-top-1637115932 {
-  position: absolute;
-  top: -50px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-  z-index: -1;
-}
-
-.custom-shape-divider-top-1637115932 svg {
-  position: relative;
-  display: block;
-  width: calc(150% + 1.3px);
-  height: 158px;
-}
-
-.custom-shape-divider-top-1637115932 .shape-fill {
-  fill: #003a9a;
-}
-
-/*----------------Projet et nouveauté---------------------*/
+/* -------------------- Projets et Nouveauté -------------------- */
 
 .projetNouveauté {
   display: flex;
@@ -464,6 +500,7 @@ body {
   background: #001538;
   height: 100%;
   position: relative;
+  z-index: 4;
 }
 
 .projetNouveauté article {
@@ -499,7 +536,8 @@ body {
   padding: 25px 0;
 }
 
-/*----------------Nous soutenir---------------------*/
+/* -------------------- Nous Soutenir -------------------- */
+
 .nousSoutenir {
   display: flex;
   justify-content: space-evenly;
@@ -507,6 +545,9 @@ body {
   flex-direction: column;
   height: 100vh;
   position: relative;
+  background-image: url(../img/fond_soutenir.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .supportBtn a {
@@ -530,25 +571,9 @@ body {
 .supportBtn:hover a {
   color: black;
 }
-/*----------------Partenaire---------------------*/
-.partaireContainer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  position: relative;
-}
-.partenaire {
-  display: flex;
-}
 
-.logo-partenaire {
-  width: 80%;
-  height: auto;
-}
+/* -------------------- Média Sociaux -------------------- */
 
-/*----------------Media Sociaux---------------------*/
 .mediaSociaux {
   display: flex;
   justify-content: space-evenly;
@@ -557,6 +582,7 @@ body {
   background: #001538;
   height: 100%;
   position: relative;
+  z-index: 4;
 }
 
 .media-box {
@@ -595,41 +621,55 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/*----------------Blogue---------------------*/
+/* -------------------- Partenaire -------------------- */
+
+.partenaireContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  background-image: url(../img/fond_partenaire.png);
+  background-position: center;
+  background-size: cover;
+}
+.partenaire {
+  display: flex;
+}
+
+.logo-partenaire {
+  width: 80%;
+  height: auto;
+}
+
+/* -------------------- Blogue -------------------- */
 
 .blogue {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
   background: #001538;
+  height: 100%;
   position: relative;
+  z-index: 4;
 }
 
-.blogueArticleContainer {
-  z-index: 3;
-  width: 100%;
-  max-width: 1000px;
-  padding: 50px;
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-  border: 1px solid #009999;
-  border-right: 1px solid #009999;
-  border-bottom: 1px solid #009999;
-  border-radius: 10px;
-  overflow: hidden;
-}
-/*----------------Équipe ---------------------*/
-/*.équipage{
+/* -------------------- Équipage -------------------- */
+
+.équipage {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   background: #001538;
-  height: 100vh;
+  height: 100%;
   position: relative;
-}*/
-/*----------------Contact ---------------------*/
+}
+
+/* -------------------- Contact -------------------- */
+
 .contactSpace {
   display: flex;
   justify-content: space-evenly;
@@ -638,7 +678,7 @@ body {
   height: 100vh;
   background: #001538;
   position: relative;
-}
+} /*
 
 .barrePrenom {
   border-top: 2px solid #00e600;
@@ -671,4 +711,4 @@ body {
   width: 30px;
   position: absolute;
   left: 542px;
-}
+}*/
