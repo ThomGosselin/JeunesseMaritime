@@ -111,7 +111,7 @@ body {
 }
 
 .fond-soutenir-right {
-  right: -50px;
+  right: 0;
   bottom: 0;
 }
 
@@ -217,13 +217,13 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: #001538;
+  /*background-color: #001538;*/
   display: flex;
   justify-content: space-between;
   padding: 30px 0px;
   z-index: 100;
   text-transform: uppercase;
-  border-bottom: 2.5px solid #21c4fd;
+  /*border-bottom: 2.5px solid #21c4fd;*/
 }
 
 .logo-box {
@@ -335,6 +335,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: /*linear-gradient(rgba(0, 21, 56, .5), rgba(0, 21, 56, .5)) ,*/url(../img/fond_header.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .search-box {
@@ -456,17 +459,10 @@ body {
   background-image: url(../img/fond_mission.png);
 }
 
-.videoContainer {
-  z-index: 2;
-  flex-basis: 20%;
-  max-width: 650px;
-  padding: 50px;
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-  border: 1px solid #009999;
-  border-right: 1px solid #009999;
-  border-bottom: 1px solid #009999;
-  border-radius: 10px;
-  overflow: hidden;
+.histoire-text{
+  width: 60%;
+  display: flex;
+  align-items: left;
 }
 
 .histoireBtn a {
@@ -666,14 +662,26 @@ body {
   flex-direction: column;
   height: 100%;
   position: relative;
+}
 
+.equipage-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
 
+.colonneEquipage{
+  flex-basis: 45%;
+  text-align: center;
 }
 
 .imgEquipage{
   height: auto;
-  width:15%;
+  width:65%;
 }
+
+
 
 /* -------------------- Contact -------------------- */
 
