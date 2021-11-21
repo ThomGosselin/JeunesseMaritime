@@ -55,7 +55,7 @@ body {
   text-transform: uppercase;
 }
 
-.title-color {
+.blue {
   color: #21c4fd;
 }
 
@@ -335,7 +335,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: /*linear-gradient(rgba(0, 21, 56, .5), rgba(0, 21, 56, .5)) ,*/url(../img/fond_header.png);
+  background-image: /*linear-gradient(rgba(0, 21, 56, .5), rgba(0, 21, 56, .5)) ,*/ url(../img/fond_header.png);
   background-position: center;
   background-size: cover;
 }
@@ -450,41 +450,50 @@ body {
 
 .missionHistorique {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
   height: 100vh;
   position: relative;
   background-image: url(../img/fond_mission.png);
+  background-position: center;
+  background-size: cover;
 }
 
-.histoire-text{
+.mission-title {
+  margin-top: 0px;
+}
+
+.histoire-text {
   width: 60%;
   display: flex;
   align-items: left;
+  margin-bottom: 50px;
+}
+
+.histoire-text p {
+  width: 70%;
+  font-size: 1.8rem;
+}
+
+.histoireBtn-box {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.histoireBtn {
+  background: #21c4fd;
+  padding: 10px 40px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: CeraBold;
 }
 
 .histoireBtn a {
   text-decoration: none;
   color: white;
-}
-
-.histoireBtn {
-  background: #009999;
-  width: 15vw;
-  height: 5vh;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.histoireBtn:hover {
-  background: white;
-}
-.histoireBtn:hover a {
-  color: black;
 }
 
 /* -------------------- Projets et Nouveauté -------------------- */
@@ -537,7 +546,7 @@ body {
 
 .nousSoutenir {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
@@ -547,26 +556,36 @@ body {
   background-size: cover;
 }
 
-.supportBtn a {
-  text-decoration: none;
-  color: white;
-}
-
-.supportBtn {
-  background: #009999;
-  width: 15vw;
-  height: 5vh;
-  text-align: center;
+.title-box-soutenir {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.supportBtn:hover {
-  background: white;
+.soutenir-title {
+  text-transform: uppercase;
+  font-family: CeraBold;
+  font-size: 3.5rem;
 }
-.supportBtn:hover a {
-  color: black;
+
+.soutenir-text {
+  margin: 10px 0px 30px 0px;
+  font-size: 2rem;
+  font-family: CeraLight;
+}
+
+.supportBtn {
+  background: #21c4fd;
+  padding: 10px 40px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: CeraBold;
+}
+
+.supportBtn a {
+  text-decoration: none;
+  color: white;
 }
 
 /* -------------------- Média Sociaux -------------------- */
@@ -625,18 +644,36 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   position: relative;
   background-image: url(../img/fond_partenaire.png);
   background-position: center;
   background-size: cover;
 }
+
 .partenaire {
   display: flex;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.partenaire-title {
+  margin-top: 200px;
+}
+
+.partenaire div {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 200px;
 }
 
 .logo-partenaire {
-  width: 80%;
+  width: 40%;
   height: auto;
 }
 
@@ -664,24 +701,22 @@ body {
   position: relative;
 }
 
-.equipage-container{
+.equipage-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 60%;
 }
 
-.colonneEquipage{
+.colonneEquipage {
   flex-basis: 45%;
   text-align: center;
 }
 
-.imgEquipage{
+.imgEquipage {
   height: auto;
-  width:65%;
+  width: 65%;
 }
-
-
 
 /* -------------------- Contact -------------------- */
 
