@@ -76,6 +76,10 @@ body {
   margin-bottom: 100px;
 }
 
+.margin-top {
+  margin-top: 200px;
+}
+
 .absolute-img-left {
   position: absolute;
   z-index: 0;
@@ -659,10 +663,6 @@ body {
   flex-wrap: wrap;
 }
 
-.partenaire-title {
-  margin-top: 200px;
-}
-
 .partenaire div {
   flex-basis: 45%;
   display: flex;
@@ -705,17 +705,38 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 60%;
 }
 
-.colonneEquipage {
-  flex-basis: 45%;
-  text-align: center;
+.equipage-box {
+  flex-basis: 42%;
+  display: flex;
+  align-items: left;
+  margin-bottom: 50px;
 }
 
-.imgEquipage {
+.equipage-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+
+.equipage-text h3 {
+  font-weight: 250;
+  font-size: 2rem;
+}
+
+.equipage-text p {
+  font-family: CeraLight;
+  font-size: 1.5rem;
+}
+
+.img-equipage {
   height: auto;
-  width: 65%;
+  width: 45%;
 }
 
 /* -------------------- Contact -------------------- */
