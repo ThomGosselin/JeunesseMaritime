@@ -226,6 +226,7 @@ body {
   padding: 30px 0px;
   z-index: 100;
   text-transform: uppercase;
+  overflow: hidden;
   /*background-color: #001538;*/
   /*border-bottom: 2.5px solid #21c4fd;*/
 }
@@ -241,6 +242,7 @@ body {
   height: auto;
   width: 60%;
   cursor: pointer;
+  z-index: 1;
 }
 
 .imgResponsive {
@@ -341,6 +343,7 @@ body {
   background-image: url(../img/fond_header.png);
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .search-box {
@@ -351,6 +354,7 @@ body {
   padding-bottom: 10px;
   margin-top: 100px;
   width: 40%;
+  z-index: 1;
 }
 
 .search-bar {
@@ -381,6 +385,23 @@ body {
   padding-right: 10px;
 }
 
+.bateau {
+  position: absolute;
+  z-index: 0;
+  right: -200px;
+  bottom: 30%;
+  animation: bateau-animation 100s infinite ease;
+}
+
+@keyframes bateau-animation {
+  0% {
+    right: -200px;
+  }
+  100% {
+    right: 1920px;
+  }
+}
+
 /* -------------------- Ressources Éducatives -------------------- */
 
 .ressourceEducative {
@@ -392,6 +413,7 @@ body {
   height: 100%;
   position: relative;
   z-index: 4;
+  overflow: hidden;
 }
 
 .ressourceBox {
@@ -461,6 +483,7 @@ body {
   background-image: url(../img/fond_mission.png);
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .mission-title {
@@ -510,6 +533,7 @@ body {
   height: 100%;
   position: relative;
   z-index: 4;
+  overflow: hidden;
 }
 
 .projetNouveauté article {
@@ -557,6 +581,7 @@ body {
   background-image: url(../img/fond_soutenir.png);
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .title-box-soutenir {
