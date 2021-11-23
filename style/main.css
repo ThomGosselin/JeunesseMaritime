@@ -664,7 +664,7 @@ body {
 }
 
 .partenaire div {
-  flex-basis: 25%;
+  flex-basis: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -727,8 +727,9 @@ body {
   flex-direction: column;
   height: 100vh;
   position: relative;
-} /*
+}
 
+/*
 .barrePrenom {
   border-top: 2px solid #00e600;
   width: 99px;
