@@ -25,6 +25,7 @@ body {
   font-family: CeraMedium;
   background: rgb(49, 49, 110);
   color: #fff;
+  overflow-x: hidden;
 }
 
 /* -------------------- Classe générale -------------------- */
