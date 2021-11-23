@@ -221,12 +221,12 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
-  /*background-color: #001538;*/
   display: flex;
   justify-content: space-between;
   padding: 30px 0px;
   z-index: 100;
   text-transform: uppercase;
+  /*background-color: #001538;*/
   /*border-bottom: 2.5px solid #21c4fd;*/
 }
 
@@ -298,7 +298,6 @@ body {
 
 .dropbtn:hover,
 .dropbtn:focus {
-  /*background-color: #2980B9;*/
   font-size: 16px;
 }
 
@@ -339,7 +338,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: /*linear-gradient(rgba(0, 21, 56, .5), rgba(0, 21, 56, .5)) ,*/ url(../img/fond_header.png);
+  background-image: url(../img/fond_header.png);
   background-position: center;
   background-size: cover;
 }
@@ -651,7 +650,7 @@ body {
   height: 100%;
   position: relative;
   background-image: url(../img/fond_partenaire.png);
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
 }
 
@@ -699,6 +698,10 @@ body {
   flex-direction: column;
   height: 100%;
   position: relative;
+  background-image: linear-gradient(rgba(0, 21, 56, 0.3), rgba(0, 21, 56, 0.5)),
+    url(../img/fond_equipage.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .equipage-container {
@@ -747,7 +750,9 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  background: #001538;
   position: relative;
+  z-index: 4;
 }
 
 /*
@@ -783,3 +788,14 @@ body {
   position: absolute;
   left: 542px;
 }*/
+
+/* -------------------- Footer -------------------- */
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #001538;
+  height: 20vh;
+}
