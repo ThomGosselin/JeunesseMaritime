@@ -1,3 +1,9 @@
+:root {
+  --color-bg: #001538;
+  --color-blue: #21c4fd;
+  --color-white: #fff;
+}
+
 @font-face {
   font-family: CeraBold;
   src: url(../fonts/Cera\ Pro\ Bold.otf);
@@ -23,7 +29,7 @@
 
 body {
   font-family: CeraMedium;
-  background: rgb(49, 49, 110);
+  background: var(--color-bg);
   color: #fff;
   overflow-x: hidden;
 }
@@ -36,7 +42,7 @@ body {
 
 .moreBtn a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-white);
   font-family: CeraLight;
   font-size: 2rem;
 }
@@ -57,7 +63,11 @@ body {
 }
 
 .blue {
-  color: #21c4fd;
+  color: var(--color-blue);
+}
+
+.green {
+  color: #22e28d;
 }
 
 .img-fluid {
@@ -143,7 +153,7 @@ body {
 }
 
 .custom-shape-divider-bottom-1637071016 .shape-fill {
-  fill: #001538;
+  fill: var(--color-bg);
 }
 
 /* ----- Vague Bas Claire ----- */
@@ -189,7 +199,7 @@ body {
 }
 
 .custom-shape-divider-top-1637115725 .shape-fill {
-  fill: #001538;
+  fill: var(--color-bg);
 }
 
 /* ----- Vague Haut Claire ----- */
@@ -227,7 +237,6 @@ body {
   padding: 30px 0px;
   z-index: 100;
   text-transform: uppercase;
-  overflow: hidden;
   /*background-color: #001538;*/
   /*border-bottom: 2.5px solid #21c4fd;*/
 }
@@ -266,7 +275,7 @@ body {
 .menu-item {
   flex-basis: 11%;
   text-decoration: none;
-  color: white;
+  color: var(--color-white);
 }
 
 .icon-menu {
@@ -282,7 +291,7 @@ body {
 }
 
 .compte-box p {
-  color: #fff;
+  color: var(--color-white);
   padding: 0px 20px 0px 20px;
 }
 
@@ -291,7 +300,7 @@ body {
   text-decoration: none;
   background: none;
   cursor: pointer;
-  color: #fff;
+  color: var(--color-white);
   font-family: CeraMedium;
   font-size: 16px;
   text-transform: uppercase;
@@ -344,14 +353,13 @@ body {
   background-image: url(../img/fond_header.png);
   background-position: center;
   background-size: cover;
-  overflow: hidden;
 }
 
 .search-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #21c4fd;
+  border-bottom: 2px solid var(--color-blue);
   padding-bottom: 10px;
   margin-top: 100px;
   width: 40%;
@@ -362,14 +370,14 @@ body {
   flex-basis: 90%;
   background: none;
   border: none;
-  color: #ffffff;
+  color: var(--color-white);
   padding: 10px;
   font-family: CeraLight;
   font-size: 1.5rem;
 }
 
 .search-bar::placeholder {
-  color: #ffffff;
+  color: var(--color-white);
   opacity: 1;
   font-family: CeraLight;
 }
@@ -410,11 +418,10 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background: #001538;
+  background: var(--color-bg);
   height: 100%;
   position: relative;
   z-index: 4;
-  overflow: hidden;
 }
 
 .ressourceBox {
@@ -425,7 +432,7 @@ body {
 
 .ressourceContainer {
   flex-basis: 30%;
-  border: 2px solid #21c4fd;
+  border: 2px solid var(--color-blue);
   background-color: #002250;
   display: flex;
   justify-content: space-between;
@@ -449,7 +456,7 @@ body {
   font-family: CeraBold;
   text-transform: uppercase;
   font-size: 1.3rem;
-  text-decoration: underline #21c4fd;
+  text-decoration: underline var(--color-blue);
 }
 
 .text {
@@ -484,7 +491,6 @@ body {
   background-image: url(../img/fond_mission.png);
   background-position: center;
   background-size: cover;
-  overflow: hidden;
 }
 
 .mission-title {
@@ -511,7 +517,7 @@ body {
 }
 
 .histoireBtn {
-  background: #21c4fd;
+  background: var(--color-blue);
   padding: 10px 40px;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -520,7 +526,7 @@ body {
 
 .histoireBtn a {
   text-decoration: none;
-  color: white;
+  color: var(--color-white);
 }
 
 /* -------------------- Projets et Nouveauté -------------------- */
@@ -530,11 +536,10 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background: #001538;
+  background: var(--color-bg);
   height: 100%;
   position: relative;
   z-index: 4;
-  overflow: hidden;
 }
 
 .projetNouveauté article {
@@ -546,7 +551,7 @@ body {
 }
 
 .project-container {
-  border: 2px solid #21c4fd;
+  border: 2px solid var(--color-blue);
   background-color: #002250;
   display: flex;
   justify-content: space-between;
@@ -582,7 +587,6 @@ body {
   background-image: url(../img/fond_soutenir.png);
   background-position: center;
   background-size: cover;
-  overflow: hidden;
 }
 
 .title-box-soutenir {
@@ -605,7 +609,7 @@ body {
 }
 
 .supportBtn {
-  background: #21c4fd;
+  background: var(--color-blue);
   padding: 10px 40px;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -614,7 +618,7 @@ body {
 
 .supportBtn a {
   text-decoration: none;
-  color: white;
+  color: var(--color-white);
 }
 
 /* -------------------- Média Sociaux -------------------- */
@@ -624,7 +628,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background: #001538;
+  background: var(--color-bg);
   height: 100%;
   position: relative;
   z-index: 4;
@@ -640,7 +644,7 @@ body {
 .media {
   flex-basis: 30%;
   height: 600px;
-  border: 2px solid #21c4fd;
+  border: 2px solid var(--color-blue);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -709,7 +713,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background: #001538;
+  background: var(--color-bg);
   height: 100%;
   position: relative;
   z-index: 4;
@@ -770,58 +774,135 @@ body {
 
 /* -------------------- Contact -------------------- */
 
-.contactSpace {
+.contact {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
-  background: #001538;
+  height: 100%;
+  background: var(--color-bg);
   position: relative;
   z-index: 4;
 }
 
-/*
-.barrePrenom {
-  border-top: 2px solid #00e600;
-  width: 99px;
-  position: absolute;
-  left: 481px;
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  align-items: center;
 }
 
-.barrenom {
-  border-top: 2px solid #00e600;
-  width: 126px;
-  position: absolute;
-  left: 454px;
-}
-.barreCourriel {
-  border-top: 2px solid #00e600;
-  width: 100px;
-  position: absolute;
-  left: 481px;
-}
-.barreSujet {
-  border-top: 2px solid #00e600;
-  width: 120px;
-  position: absolute;
-  left: 460px;
+/* ----- Formulaire ----- */
+
+form {
+  flex-basis: 50%;
 }
 
-.barreMessage {
-  border-top: 2px solid #00e600;
-  width: 30px;
-  position: absolute;
-  left: 542px;
-}*/
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  padding-bottom: 35px;
+}
+
+.form-section label {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  padding-right: 15px;
+}
+
+.form-section input {
+  height: 40px;
+  background: #000f27;
+  border: #003a9a 2px solid;
+  text-decoration: none;
+  padding: 10px;
+  color: #f1f1f1;
+}
+
+.form-section input::placeholder {
+  color: #003a9a;
+  opacity: 1;
+  font-family: CeraLight;
+}
+
+.form-section input:focus {
+  outline: none;
+}
+
+.name-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  flex-basis: 46%;
+}
+
+.line-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr {
+  border-color: var(--color-blue);
+  width: 100%;
+}
+
+.area-box {
+  background: #000f27;
+  border: #003a9a 2px solid;
+  padding: 10px;
+  color: var(--color-white);
+  resize: none;
+  width: 100%;
+  height: 150px;
+}
+
+.area-box::placeholder {
+  color: #003a9a;
+  opacity: 1;
+  font-family: CeraLight;
+}
+
+.area-box:focus {
+  outline: none;
+}
+
+/* ----- Informations de contact ----- */
+
+.contact-box {
+  flex-basis: 40%;
+}
+
+.contact-box p {
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+}
+
+.color-text {
+  font-family: CeraLight;
+}
 
 /* -------------------- Footer -------------------- */
 
 footer {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  background: #001538;
+  background: var(--color-bg);
   height: 20vh;
 }
+
+.footer-text {
+  border-right: #22e28d 2px solid;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+/* -------------------- Section tablette -------------------- */
+
+/* -------------------- Section mobile -------------------- */

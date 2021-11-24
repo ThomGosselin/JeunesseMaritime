@@ -753,28 +753,108 @@
         </div>
       </section>
 
-      <section class="contactSpace">
+      <section class="contact" id="Contact">
         <article class="section-title">
-          <h2>Pour nous <span class="blue">contacter</span></h2>
+          <h2>Pour nous <span class="blue">joindre</span></h2>
         </article>
-        <div class="contactSpace">
-          <form class="contactForm"></form>
-          <div class="contactInfo" id="Contact">
-            <img src="img/logo.png" alt="logo de jeunesse maritime" />
-            <h4>Adresse:</h4>
-            <h5>900,Rte de la Mer</h5>
-            <h5>Sainte-Flavie</h5>
-            <h5>G0J 2L0, Canada</h5>
-            <h4>Téléphone: 418-763-2500</h4>
-            <h4>Information générale:</h4>
-            <h5>jeunesse@maritime.qc.ca</h5>
+
+        <article class="contact-container">
+          <form>
+            <div class="name-box">
+              <article class="form-section name">
+                <div class="line-box">
+                  <label for="prenom">Prénom</label>
+                  <hr />
+                </div>
+                <input
+                  type="text"
+                  name="prenom"
+                  id="prenom"
+                  placeholder="Votre prénom..."
+                />
+              </article>
+
+              <article class="form-section name">
+                <div class="line-box">
+                  <label for="nom">Nom</label>
+                  <hr />
+                </div>
+                <input
+                  type="text"
+                  name="nom"
+                  id="nom"
+                  placeholder="Votre nom..."
+                />
+              </article>
+            </div>
+
+            <article class="form-section">
+              <div class="line-box">
+                <label for="courriel">Courriel</label>
+                <hr />
+              </div>
+              <input
+                type="email"
+                name="courriel"
+                id="courriel"
+                placeholder="Votre courriel..."
+              />
+            </article>
+
+            <article class="form-section">
+              <div class="line-box">
+                <label for="sujet">Sujet</label>
+                <hr />
+              </div>
+              <input
+                type="text"
+                name="sujet"
+                id="sujet"
+                placeholder="Votre sujet..."
+              />
+            </article>
+
+            <article class="form-section">
+              <div class="line-box">
+                <label for="message">Message</label>
+                <hr />
+              </div>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Votre message..."
+                class="area-box"
+              ></textarea>
+            </article>
+          </form>
+
+          <div class="contact-box">
+            <!--<img
+              src="img/logo.png"
+              alt="Logo Jeunesse Maritime du Saint-Laurent"
+            />-->
+            <p>
+              Adresse : <br />
+              <span class="blue color-text">
+                900, rue de la Mer <br /> Sainte-Flavie <br /> G0J 2L0, Québec, Canada
+              </span>
+            </p>
+            <p>
+              Téléphone :
+              <span class="green color-text"> 418 763-2500 </span>
+            </p>
+            <p>
+              Courriel : <br />
+              <span class="blue color-text"> jeunessemaritime@gmail.com </span>
+            </p>
           </div>
-        </div>
+        </article>
       </section>
     </main>
     <footer>
-      <h2>Jeunesse Martime du Saint-Laurent</h2>
-      <p><span class="blue">Tout droit réserver</span></p>
+      <p class="footer-text">&copy;2021 <span class="blue">Jeunesse Maritime</p></span>
+
+      <p>Tout droits réservés</p>
     </footer>
   </body>
 </html>
