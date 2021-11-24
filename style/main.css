@@ -278,6 +278,11 @@ body {
   color: var(--color-white);
 }
 
+.souvenir-btn{
+  background-color: var(--color-blue);
+  padding: 10px 25px;
+}
+
 .icon-menu {
   height: auto;
   width: 5%;
@@ -399,7 +404,7 @@ body {
   z-index: 0;
   right: -200px;
   bottom: 30%;
-  animation: bateau-animation 100s infinite ease;
+  animation: bateau-animation 100s infinite linear;
 }
 
 @keyframes bateau-animation {
@@ -746,7 +751,7 @@ body {
   flex-basis: 42%;
   display: flex;
   align-items: left;
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 }
 
 .equipage-text {
@@ -770,6 +775,8 @@ body {
 .img-equipage {
   height: auto;
   width: 45%;
+  border: 3px solid var(--color-blue);
+  border-radius: 50%;
 }
 
 /* -------------------- Contact -------------------- */
