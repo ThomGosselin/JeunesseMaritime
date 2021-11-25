@@ -47,12 +47,10 @@ function updateDropDownMenu(dropItem, button) {
   }, 1);
 }
 
-function changeBtnColor(id) {}
-
 const nav = document.querySelector(".main-menu");
 
 window.onscroll = () => {
-  if (window.pageYOffset > 100) {
+  if (window.pageYOffset > 200) {
     nav.style.backgroundColor = "#001538ea";
     nav.style.borderBottom = "2px solid #21c4fd";
   } else {

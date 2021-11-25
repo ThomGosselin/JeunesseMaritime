@@ -2,6 +2,7 @@
   --color-bg: #001538;
   --color-blue: #21c4fd;
   --color-white: #fff;
+  --color-green: #22e28d;
 }
 
 @font-face {
@@ -67,7 +68,7 @@ body {
 }
 
 .green {
-  color: #22e28d !important;
+  color: var(--color-green) !important;
 }
 
 .img-fluid {
@@ -274,7 +275,8 @@ body {
 }
 
 .btn-color-hover:hover {
-  color: #22e28d;
+  color: var(--color-green);
+  transition: all ease 200ms;
 }
 
 .menu {
@@ -299,7 +301,8 @@ body {
 }
 
 .souvenir-btn:hover {
-  background-color: #22e28d;
+  background-color: var(--color-green);
+  transition: all ease 200ms;
 }
 
 .icon-menu {
@@ -360,6 +363,7 @@ body {
 
 .drop-box a:hover {
   background-color: #003a9a;
+  transition: all ease 200ms;
 }
 
 .show {
@@ -567,6 +571,11 @@ body {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-family: CeraBold;
+  transition: all ease 200ms;
+}
+
+.histoireBtn:hover {
+  background: var(--color-green);
 }
 
 .histoireBtn a {
@@ -659,6 +668,11 @@ body {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-family: CeraBold;
+  transition: all ease 200ms;
+}
+
+.supportBtn:hover {
+  background: var(--color-green);
 }
 
 .supportBtn a {
@@ -919,6 +933,24 @@ hr {
   outline: none;
 }
 
+.submit-btn {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  padding: 10px 25px;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-family: CeraMedium;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all ease 200ms;
+}
+
+.submit-btn:hover {
+  background: var(--color-green);
+  transition: all ease 200ms;
+}
+
 /* ----- Informations de contact ----- */
 
 .contact-box {
@@ -926,7 +958,7 @@ hr {
 }
 
 .logo-contact {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .contact-box p {
