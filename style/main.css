@@ -53,6 +53,11 @@ body {
   font-family: CeraLight;
   font-size: 2rem;
   padding-right: 10px;
+  transition: all 200ms ease;
+}
+
+.btn:hover {
+  color: var(--color-blue);
 }
 
 .img-btn {
@@ -124,6 +129,19 @@ body {
   overflow: hidden;
 }
 
+.seeBtn {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  padding: 10px 20px;
+  transition: all 200ms ease;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.seeBtn:hover {
+  background-color: var(--color-green);
+}
+
 /* ----- Fond Marin ----- */
 
 .fond-marin {
@@ -155,15 +173,17 @@ body {
 
 .poisson {
   position: absolute;
+  width: auto;
+  height: 5%;
   z-index: 0;
 }
 
 .top {
-  top: 50px;
+  top: 100px;
 }
 
 .bottom {
-  bottom: 50px;
+  bottom: 100px;
 }
 
 .middle-top {
@@ -576,6 +596,11 @@ body {
 
 .tags {
   display: flex;
+}
+
+.tag {
+  text-decoration: none;
+  color: white;
 }
 
 .tags p {
@@ -1000,6 +1025,12 @@ hr {
 
 .area-box:focus {
   outline: none;
+}
+
+.submit-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .submit-btn {
