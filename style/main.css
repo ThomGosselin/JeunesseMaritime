@@ -947,6 +947,10 @@ body {
   align-items: center;
 }
 
+.email {
+  text-decoration: none;
+}
+
 /* ----- Formulaire ----- */
 
 form {
