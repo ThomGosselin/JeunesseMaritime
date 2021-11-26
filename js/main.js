@@ -68,3 +68,47 @@ function backToTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+////////////////////////////////
+// Poissons au hazard
+
+const leftPoisson = document.querySelectorAll(".poisson-left");
+const rightPoisson = document.querySelectorAll(".poisson-right");
+
+leftPoisson.forEach((poisson) => {
+  poisson.style.animation =
+    "left-right " + getRndNumber(10, 60) + "s linear infinite";
+
+  poisson.addEventListener("animationiteration", () => {
+    poisson.src = "img/poisson_" + getRndNumber(1, 6) + ".png";
+  });
+});
+
+rightPoisson.forEach((poisson) => {
+  poisson.style.animation =
+    "right-left " + getRndNumber(10, 60) + "s linear infinite";
+
+  poisson.addEventListener("animationiteration", () => {
+    poisson.src = "img/poisson_" + getRndNumber(1, 6) + ".png";
+  });
+});
+
+function getRndNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+////////////////////////////////
+// Hover En savoir plus
+
+const moreBtn = document.querySelectorAll(".btn");
+const fleche = document.querySelectorAll(".img-btn");
+
+moreBtn.forEach((btn, id) => {
+  btn.addEventListener("mouseover", () => {
+    fleche[id].style.transform = "translate(10px)";
+  });
+
+  btn.addEventListener("mouseleave", () => {
+    fleche[id].style.transform = "translate(0px)";
+  });
+});

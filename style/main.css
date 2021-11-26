@@ -37,15 +37,29 @@ body {
 
 /* -------------------- Classe générale -------------------- */
 
+.moreBtn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .moreBtn {
   margin: 100px 0px;
 }
 
-.moreBtn a {
+.btn {
   text-decoration: none;
   color: var(--color-white);
   font-family: CeraLight;
   font-size: 2rem;
+  padding-right: 10px;
+}
+
+.img-btn {
+  width: auto;
+  height: 100%;
+  margin-top: 5px;
+  transition: all 200ms ease;
 }
 
 .section-title {
@@ -54,6 +68,7 @@ body {
   align-items: flex-start;
   width: 60%;
   margin: 100px 0px;
+  z-index: 4;
 }
 
 .section-title h2 {
@@ -132,8 +147,59 @@ body {
 }
 
 .fond-equipage-left {
-  left: 0;
+  left: -10px;
   top: 0;
+}
+
+/* ----- Poisson ----- */
+
+.poisson {
+  position: absolute;
+  z-index: 0;
+}
+
+.top {
+  top: 50px;
+}
+
+.bottom {
+  bottom: 50px;
+}
+
+.middle-top {
+  top: 25%;
+}
+
+.middle-bottom {
+  bottom: 25%;
+}
+
+.poisson-left {
+  transform: scaleX(-1);
+  left: -200px;
+}
+
+.poisson-right {
+  right: -200px;
+  animation: right-left 50s linear infinite;
+}
+
+@keyframes left-right {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 1920px;
+  }
+}
+
+@keyframes right-left {
+  0% {
+    right: -200px;
+  }
+  100% {
+    right: 1920px;
+  }
 }
 
 /* -------------------- Vagues -------------------- */
@@ -434,7 +500,7 @@ body {
   z-index: 1;
   right: -200px;
   bottom: 258px;
-  animation: bateau-animation 100s infinite linear;
+  animation: right-left 100s infinite linear;
 }
 
 .phoque {
@@ -449,15 +515,6 @@ body {
   z-index: 2;
   bottom: -20px;
   left: -300px;
-}
-
-@keyframes bateau-animation {
-  0% {
-    right: -200px;
-  }
-  100% {
-    right: 1920px;
-  }
 }
 
 /* -------------------- Ressources Éducatives -------------------- */
@@ -544,6 +601,7 @@ body {
 
 .mission-title {
   margin-top: 0px;
+  z-index: 4;
 }
 
 .histoire-text {
@@ -551,6 +609,7 @@ body {
   display: flex;
   align-items: left;
   margin-bottom: 50px;
+  z-index: 4;
 }
 
 .histoire-text p {
@@ -572,6 +631,7 @@ body {
   text-transform: uppercase;
   font-family: CeraBold;
   transition: all ease 200ms;
+  z-index: 4;
 }
 
 .histoireBtn:hover {
@@ -648,6 +708,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 4;
 }
 
 .soutenir-title {
@@ -660,6 +721,11 @@ body {
   margin: 10px 0px 30px 0px;
   font-size: 2rem;
   font-family: CeraLight;
+  z-index: 4;
+}
+
+.support-btn-box {
+  z-index: 4;
 }
 
 .supportBtn {
@@ -669,6 +735,7 @@ body {
   text-transform: uppercase;
   font-family: CeraBold;
   transition: all ease 200ms;
+  border-radius: 2px;
 }
 
 .supportBtn:hover {
@@ -749,6 +816,7 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 4;
 }
 
 .partenaire div {
@@ -799,6 +867,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   width: 60%;
+  z-index: 4;
 }
 
 .equipage-box {
@@ -976,8 +1045,58 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: var(--color-bg);
-  height: 20vh;
+  height: 100%;
+  border-top: 2px solid #002b76;
+  padding: 50px 0px;
+  margin-top: 100px;
+}
+
+.footer-logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  margin-bottom: 40px;
+}
+
+.footer-logo-box {
+  position: relative;
+  cursor: pointer;
+}
+
+.footer-logo-box:hover .dot {
+  background-color: #003a9a;
+}
+
+.footer-logo {
+  height: 18px;
+  width: auto;
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dot {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #011b4b;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-text {
